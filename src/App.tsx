@@ -13,7 +13,7 @@ import { CheckIdleActivity } from "./components/CheckIdleActivity";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename={import.meta.env.VITE_REACT_APP_ROOT}>
       <div>
         <nav>
           <ul>

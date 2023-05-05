@@ -3,7 +3,9 @@ import { useHistory } from "react-router-dom";
 
 const TEN_MINUTES = 10 * 1000;
 const THREE_MINUTES = 3 * 1000;
-const whiteListedUrls = ["#/login", "#/productSelection"];
+const whiteListedUrls = ["/login", "/productSelection"].map(
+  (s) => `#${import.meta.env.VITE_REACT_APP_ROOT}${s}`
+);
 
 export const useIdleActivity = () => {
   const history = useHistory();
