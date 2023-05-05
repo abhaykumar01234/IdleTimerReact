@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 40px;
+}
+
+body {
+  padding-inline: calc(50vw - 600px);
+  font-family: sans-serif;
+}
